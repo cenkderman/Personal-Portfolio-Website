@@ -2,9 +2,8 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { MoonIcon } from "./MoonIcon";
-import { SunIcon } from "./SunIcon";
 import { Switch, VisuallyHidden, useSwitch } from "@nextui-org/react";
+import { SunIcon, MoonIcon, } from '@heroicons/react/24/solid'
 
 export function ThemeSwitcher() {
     const [mounted, setMounted] = useState(false)
@@ -51,7 +50,7 @@ export function ThemeSwitcher() {
                         ],
                     })}
                 >
-                    {isSelected ? <MoonIcon /> : <SunIcon />}
+                    {isSelected ? <MoonIcon className="h-4 w-4" /> : <SunIcon className="h-4 w-4" />}
                 </div>
             </Component>
         </div>
