@@ -51,7 +51,7 @@ export function ThemeSwitcher() {
                         ],
                     })}
                 >
-                    {isSelected ? <SunIcon /> : <MoonIcon />}
+                    {isSelected ? <MoonIcon /> : <SunIcon />}
                 </div>
             </Component>
         </div>
