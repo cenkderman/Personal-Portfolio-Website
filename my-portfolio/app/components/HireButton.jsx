@@ -7,6 +7,7 @@ export default function HireButton() {
         <Button
             radius="sm"
             variant="bordered"
+            className="hidden sm:flex"
         >
 
             Hire Me
