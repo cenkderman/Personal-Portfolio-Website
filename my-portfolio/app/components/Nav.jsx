@@ -21,8 +21,7 @@ const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     const menuItems = [
-        "Home",
-        "About me",
+        "About",
         "Skills",
         "Services",
         "Portfolio",
@@ -38,22 +37,22 @@ const Nav = () => {
             </NavbarContent>
 
             <NavbarContent className='hidden sm:flex gap-4'>
-                <NavbarItem>
+                <NavbarItem className='hover:text-default-500'>
                     <Link href="/">Home</Link>
                 </NavbarItem>
-                <NavbarItem>
+                <NavbarItem className='hover:text-default-500'>
                     <Link href="about">About me</Link>
                 </NavbarItem>
-                <NavbarItem>
+                <NavbarItem className='hover:text-default-500'>
                     <Link href="skills">Skills</Link>
                 </NavbarItem>
-                <NavbarItem>
+                <NavbarItem className='hover:text-default-500'>
                     <Link href="services">Services</Link>
                 </NavbarItem>
-                <NavbarItem>
+                <NavbarItem className='hover:text-default-500'>
                     <Link href="portfolio">Portfolio</Link>
                 </NavbarItem>
-                <NavbarItem>
+                <NavbarItem className='hover:text-default-500'>
                     <Link href="contact">Contact</Link>
                 </NavbarItem>
             </NavbarContent>
@@ -69,7 +68,7 @@ const Nav = () => {
                     <NavbarMenuItem key={`${item}-${index}`}>
                         <Link
                             color={
-                                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
+                                index === 1 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
                             }
                             className="w-full"
                             href={item}
