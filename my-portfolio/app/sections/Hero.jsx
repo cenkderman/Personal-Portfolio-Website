@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { Image } from "@nextui-org/react";
-import { Button } from '@nextui-org/react';
+import { Button, Link } from '@nextui-org/react';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion"
 
@@ -30,8 +30,8 @@ const imageVariant = {
 
 export function Hero() {
     return (
-        <main className='flex flex-col gap-5 sm:my-32'>
-            <section className='flex flex-col gap-7 sm:flex-row items-center sm:backdrop-blur-sm rounded-xl'>
+        <main className='flex flex-col gap-5 sm:my-32 max-w-7xl'>
+            <section className='flex flex-col gap-7 sm:flex-row items-center backdrop-blur-sm rounded-xl'>
                 <motion.div className='flex flex-col items-center gap-7 sm:items-start' variants={textVariants} initial="initial" animate="animate" transition={{ ease: "easeOut", duration: 2 }}>
                     <motion.h1 className='text-4xl font-bold sm:text-6xl' variants={textVariants} transition={{ ease: "easeOut", duration: 2 }}>
                         Hello, I'm Cenk
@@ -62,6 +62,8 @@ export function Hero() {
                         className='px-8 hidden sm:flex'
                         variants={textVariants}
                         transition={{ ease: "easeOut", duration: 4 }}
+                        href="https://github.com/cenkderman"
+                        as={Link}
                     >
                         Github
                     </Button>
@@ -73,12 +75,9 @@ export function Hero() {
                         alt='Cenk Hero Image'
                         src='/images/HeroImage.jpeg'
                         radius='full'
-
+                        isZoomed
                     />
                 </motion.div>
-            </section>
-            <section>
-
             </section>
         </main>
     )
