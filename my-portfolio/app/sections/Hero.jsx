@@ -36,7 +36,7 @@ export function Hero() {
                     <motion.h1 className='text-4xl font-bold sm:text-6xl' variants={textVariants} transition={{ ease: "easeOut", duration: 2 }}>
                         Hello, I'm Cenk
                     </motion.h1>
-                    <motion.h2 className='text-2xl font-normal sm:text-4xl' variants={textVariants} transition={{ ease: "easeOut", duration: 2 }}>
+                    <motion.h2 className='text-2xl font-normal sm:text-4xl text-secondary' variants={textVariants} transition={{ ease: "easeOut", duration: 2 }}>
                         <TypeAnimation
                             sequence={[
                                 // Same substring at the start will only be typed out once, initially

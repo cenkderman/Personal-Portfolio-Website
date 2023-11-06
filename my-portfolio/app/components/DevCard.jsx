@@ -4,14 +4,14 @@ import { Card, CardHeader, CardBody, CardFooter, Divider } from "@nextui-org/rea
 import { PaintBrushIcon, CodeBracketIcon, UsersIcon } from '@heroicons/react/24/outline';
 import React from "react";
 
-export function WebCard() {
+export function DevCard() {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
     return (
         <div>
             <Card className="max-w-sm">
                 <CardHeader className="flex gap-2">
-                    <PaintBrushIcon className="h-5 w-5 text-warning" />
+                    <CodeBracketIcon className="h-5 w-5 text-warning" />
                     <h1 className="">Web Design</h1>
                 </CardHeader>
                 <Divider />
